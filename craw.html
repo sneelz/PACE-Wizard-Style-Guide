@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1;maximum-scale=1.0; user-scalable=0;">
+
+    <title>Task Update Wizard</title>
+
+    <!-- Third Party CSS -->
+    <link rel="stylesheet" href="assets/libraries/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/libraries/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="assets/libraries/font-awesome/css/font-awesome.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/globals.css">
+    <link rel="stylesheet" href="assets/css/buttons.css">
+    <link rel="stylesheet" href="assets/css/navigation.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
+    <link rel="stylesheet" href="assets/css/pills.css">
+    <link rel="stylesheet" href="assets/css/table.css">
+    <link rel="stylesheet" href="assets/css/typography.css">
+    <link rel="stylesheet" href="assets/css/formcontrols.css">
+    <link rel="stylesheet" href="assets/css/colors.css">
+
+    <link rel="stylesheet" href="assets/css/craw.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-default pace-navbar" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#paceNav">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand pace-text-lg" href=""><img src="assets/img/att-globe.png" style="height: 30px; margin-top: -8px; display: inline; vertical-align: middle;" /> &nbsp; PACE Change Request Approval Wizard</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="paceNav">
+                <ul class="nav navbar-nav navbar-left"></ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href=""><i class="fa fa-question-circle pace-text-sm" aria-hidden="true" title="Learn more"></i></a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle pace-text-sm" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Navigate to <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <h4 class="bold">PACE Application</h4>
+                                <li><a href="">PACE UI</a></li>
+                                <li><a href="">Illinois / Wisconsin</a></li>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-12 vertical-divider-left vertical-divider-right">
+                                <h4 class="bold">Wizards</h4>
+                                <li><a href="">Job Upload/Update Wizard</a></li>
+                                <li><a href="">Job Link Wizard</a></li>
+                                <li><a href="">Task Update Wizard</a></li>
+                                <li><a href="">New Template Wizard</a></li>
+                                <li><a href="">Insert Template Wizard</a></li>
+                                <li><a href="">CR Initiation Wizard</a></li>
+                                <li><a href="">CR Approval Wizard</a></li>
+                                <li><a href="">Issue Update Wizard</a></li>
+                                <li><a href="">CCN Search Wizard</a></li>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <h4 class="bold">External Links</h4>
+                                <li><a href="">Cognos</a></li>
+                                <li><a href="">iPlan</a></li>
+                                <li><a href="">MyLogins</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    
+    <div class="craw-content-container">
+        <div class="pace-table-container">
+
+            <table class="pace-table">
+                <thead class="pace-bg-base">
+                    <tr>
+                        <th></th>
+                        <th>Task Code</th>
+                        <th>Task Name</th>
+                        <th>Review Step Name</th>
+                        <th>Task Status</th>
+                        <th>Can be N/A</th>
+                        <th>PACE Job #</th>
+                        <th>FA Location Code</th>
+                        <th>Task Assignee</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td>JI007</td>
+                        <td>Feasibility Assessment</td>
+                        <td>Feasibility Assessment</td>
+                        <td>Active</td>
+                        <td>Yes</td>
+                        <td><a href="">MRUMW000001</a></td>
+                        <td>1234567</td>
+                        <td>
+                            <select class="pace-form-control" title="Task Assignee">
+                                <option value="jDoe">John Doe (ATT)</option>
+                                <option value="mSue">Mary Sue (ATT)</option>
+                                <option value="cWalker">Christopher Walker (BV)</option>
+                                <option value="lDavids">Lary Davids (Ericsson)</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr disabled>
+                        <td></td>
+                        <td>SS019</td>
+                        <td>Initial OOM Received</td>
+                        <td>Initial OOM Received</td>
+                        <td>Active</td>
+                        <td>Yes</td>
+                        <td><a href="">MRUMW000001</a></td>
+                        <td>1234567</td>
+                        <td>
+                            <select class="pace-form-control" title="Task Assignee" disabled>
+                                <option value="jDoe">John Doe (ATT)</option>
+                                <option value="mSue">Mary Sue (ATT)</option>
+                                <option value="cWalker">Christopher Walker (BV)</option>
+                                <option value="lDavids">Lary Davids (Ericsson)</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>JI022</td>
+                        <td>Preliminary RFDS Issued</td>
+                        <td>Preliminary RFDS Issued</td>
+                        <td>Active</td>
+                        <td>Yes</td>
+                        <td><a href="">MRUMW000001</a></td>
+                        <td>1234567</td>
+                        <td>
+                            <select class="pace-form-control" title="Task Assignee">
+                                <option value="jDoe">John Doe (ATT)</option>
+                                <option value="mSue">Mary Sue (ATT)</option>
+                                <option value="cWalker">Christopher Walker (BV)</option>
+                                <option value="lDavids">Lary Davids (Ericsson)</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="has-edit">
+                        <td><a href=""<i class="fa fa-pencil" aria-hidden="true" title="Discard Changes"></i></a></td>
+                        <td>SS004</td>
+                        <td>Site Audit Completed</td>
+                        <td>Site Audit Completed</td>
+                        <td>Active</td>
+                        <td>Yes</td>
+                        <td><a href="">MRUMW000001</a></td>
+                        <td>1234567</td>
+                        <td>
+                            <select class="pace-form-control" title="Task Assignee">
+                                <option value="jDoe">John Doe (ATT)</option>
+                                <option value="mSue">Mary Sue (ATT)</option>
+                                <option value="cWalker">Christopher Walker (BV)</option>
+                                <option value="lDavids">Lary Davids (Ericsson)</option>
+                            </select>
+                            <a href=""><i class="fa fa-pencil" aria-hidden="true" title="Discard Changes"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>SS048</td>
+                        <td>SA OOM Loaded</td>
+                        <td>SA OOM Loaded</td>
+                        <td>Active</td>
+                        <td>Yes</td>
+                        <td><a href="">MRUMW000001</a></td>
+                        <td>1234567</td>
+                        <td>
+                            <select class="pace-form-control" title="Task Assignee">
+                                <option value="jDoe">John Doe (ATT)</option>
+                                <option value="mSue">Mary Sue (ATT)</option>
+                                <option value="cWalker">Christopher Walker (BV)</option>
+                                <option value="lDavids">Lary Davids (Ericsson)</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table><!-- .pace-table -->
+        </div><!-- .pace-table-container -->
+
+        <div class="text-right craw-btn-container">
+            <button class="pace-btn pace-btn-secondary">View Net Impact</button>
+            <button class="pace-btn pace-btn-secondary">Download Selected</button>
+            <button class="pace-btn pace-btn-primary">Submit</button>
+        </div>
+    </div><!-- .craw-content-container -->
+
+    <!-- SCRIPTS -->
+    <script src="assets/libraries/jquery/dist/jquery.js"></script>
+    <script src="assets/libraries/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+    <script src="assets/js/scripts.js"></script>
+
+</body>
+</html>

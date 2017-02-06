@@ -1,0 +1,210 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1;maximum-scale=1.0; user-scalable=0;">
+
+    <title>PACE Wizard Style Guide</title>
+
+    <!-- Third Party CSS -->
+    <link rel="stylesheet" href="assets/libraries/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/libraries/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="assets/libraries/font-awesome/css/font-awesome.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/globals.css">
+    <link rel="stylesheet" href="assets/css/buttons.css">
+    <link rel="stylesheet" href="assets/css/navigation.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
+    <link rel="stylesheet" href="assets/css/pills.css">
+    <link rel="stylesheet" href="assets/css/table.css">
+    <link rel="stylesheet" href="assets/css/typography.css">
+    <link rel="stylesheet" href="assets/css/formcontrols.css">
+    <link rel="stylesheet" href="assets/css/colors.css">
+
+    <link rel="stylesheet" href="assets/css/styleguide.css">
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header"></div>
+
+        <!-- MAIN CONTAINER -->
+        <div id="page-content-wrapper">
+            <div class="container pull-left">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <br />
+                        <h1 class="bold">Navigation</h1>
+
+                        <h3>
+                            The navigation bar is displayed at the top of every PACE Wizard and is responsive from desktop to mobile. It contains the AT&T logo, name of the wizard, and hyperlinks to useful pages within the PACE application.
+                            <br /><br />
+                        </h3>
+
+                        <!-- NAVBAR -->
+                        <nav class="navbar navbar-default pace-navbar" role="navigation">
+                            <div class="container-fluid">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#paceNav">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                    <a class="navbar-brand pace-text-lg" href=""><img src="assets/img/att-globe.png" style="height: 30px; margin-top: -8px; display: inline; vertical-align: middle;" /> &nbsp; PACE Task Update Wizard</a>
+                                </div>
+
+                                <div class="collapse navbar-collapse" id="paceNav">
+                                    <ul class="nav navbar-nav navbar-left"></ul>
+
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li>
+                                            <a href=""><i class="fa fa-question-circle pace-text-sm" aria-hidden="true" title="Learn more"></i></a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle pace-text-sm" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Navigate to <span class="caret"></span></a>
+                                            <ul class="dropdown-menu">
+                                                <div class="col-md-4 col-sm-4 col-xs-12">
+                                                    <h4 class="bold">PACE Application</h4>
+                                                    <li><a href="">PACE UI</a></li>
+                                                    <li><a href="">Illinois / Wisconsin</a></li>
+                                                </div>
+                                                <div class="col-md-4 col-sm-4 col-xs-12 vertical-divider-left vertical-divider-right">
+                                                    <h4 class="bold">Wizards</h4>
+                                                    <li><a href="">Job Upload/Update Wizard</a></li>
+                                                    <li><a href="">Job Link Wizard</a></li>
+                                                    <li><a href="">Task Update Wizard</a></li>
+                                                    <li><a href="">New Template Wizard</a></li>
+                                                    <li><a href="">Insert Template Wizard</a></li>
+                                                    <li><a href="">CR Initiation Wizard</a></li>
+                                                    <li><a href="">CR Approval Wizard</a></li>
+                                                    <li><a href="">Issue Update Wizard</a></li>
+                                                    <li><a href="">CCN Search Wizard</a></li>
+                                                </div>
+                                                <div class="col-md-4 col-sm-4 col-xs-12">
+                                                    <h4 class="bold">External Links</h4>
+                                                    <li><a href="">Cognos</a></li>
+                                                    <li><a href="">iPlan</a></li>
+                                                    <li><a href="">MyLogins</a></li>
+                                                </div>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div><!-- /.navbar-collapse -->
+                            </div><!-- /.container-fluid -->
+                        </nav>
+
+                        <br />
+
+                        <div class="panel-group">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" data-toggle="collapse" href="#collapse1">
+                                    <h4 class="panel-title">
+                                        Code
+                                    </h4>
+                                </div>
+                                <div id="collapse1" class="panel-body panel-collapse collapse">
+<pre><xmp>
+<nav class="navbar navbar-default pace-navbar" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#paceNav">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand pace-text-lg" href="">
+                <img src="assets/img/att-globe.png" style="height: 30px; margin-top: -8px; display: inline; vertical-align: middle;" /> 
+                &nbsp; PACE Task Update Wizard
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="paceNav">
+            <ul class="nav navbar-nav navbar-left"></ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="">
+                        <i class="fa fa-question-circle pace-text-sm" aria-hidden="true" title="Learn more"></i>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle pace-text-sm" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Navigate to <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <h4 class="bold">PACE Application</h4>
+                            <li><a href="">PACE UI</a></li>
+                            <li><a href="">Illinois / Wisconsin</a></li>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12 vertical-divider-left vertical-divider-right">
+                            <h4 class="bold">Wizards</h4>
+                            <li><a href="">Job Upload/Update Wizard</a></li>
+                            <li><a href="">Job Link Wizard</a></li>
+                            <li><a href="">Task Update Wizard</a></li>
+                            <li><a href="">New Template Wizard</a></li>
+                            <li><a href="">Insert Template Wizard</a></li>
+                            <li><a href="">CR Initiation Wizard</a></li>
+                            <li><a href="">CR Approval Wizard</a></li>
+                            <li><a href="">Issue Update Wizard</a></li>
+                            <li><a href="">CCN Search Wizard</a></li>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <h4 class="bold">External Links</h4>
+                            <li><a href="">Cognos</a></li>
+                            <li><a href="">iPlan</a></li>
+                            <li><a href="">MyLogins</a></li>
+                        </div>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+</xmp></pre>
+                                </div>
+                            </div><!-- /.panel -->
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" data-toggle="collapse" href="#collapse2">
+                                    <h4 class="panel-title">
+                                        Documentation
+                                    </h4>
+                                </div>
+                                <div id="collapse2" class="panel-body panel-collapse collapse in">
+                                    <h2>About the Component</h2>
+                                    <h4>
+                                        The navigation bar is built off of Bootstrap classes <code>navbar</code> and <code>navbar-default</code>. Responsive functionality is maintained, scaling appropriately from desktop to mobile.
+                                        <br /><br />
+                                        To achieve the appropriate PACE navbar styling, add the custom CSS class <code>pace-navbar</code> to the navigation.
+                                    </h4>
+
+                                    <br />
+
+                                    <h2>Best Practices</h2>
+                                    <h4>The navigation bar is displayed in every PACE wizard. The name in the top left will be unique per wizard, but otherwise the navbar is consistent across wizards.</h4>
+                                </div>
+                            </div><!-- /.panel -->
+                        </div><!-- /.panel-group -->
+
+                    </div>
+                </div><!-- /.row -->
+                <br />
+            </div><!-- /.container -->
+        </div><!-- /#page-content-wrapper -->
+
+        <!-- SCRIPTS -->
+        <script src="assets/libraries/jquery/dist/jquery.js"></script>
+        <script src="assets/libraries/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+        <script src="assets/js/scripts.js"></script>
+
+    </div><!-- #wrapper -->
+</body>
+</html>

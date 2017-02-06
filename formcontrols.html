@@ -1,0 +1,283 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1;maximum-scale=1.0; user-scalable=0;">
+
+    <title>PACE Wizard Style Guide</title>
+
+    <!-- Third Party CSS -->
+    <link rel="stylesheet" href="assets/libraries/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/libraries/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="assets/libraries/font-awesome/css/font-awesome.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/globals.css">
+    <link rel="stylesheet" href="assets/css/buttons.css">
+    <link rel="stylesheet" href="assets/css/navigation.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
+    <link rel="stylesheet" href="assets/css/pills.css">
+    <link rel="stylesheet" href="assets/css/table.css">
+    <link rel="stylesheet" href="assets/css/typography.css">
+    <link rel="stylesheet" href="assets/css/formcontrols.css">
+    <link rel="stylesheet" href="assets/css/colors.css">
+
+    <link rel="stylesheet" href="assets/css/styleguide.css">
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header"></div>
+
+        <!--MAIN CONTAINER-->
+        <div id="page-content-wrapper">
+            <div class="container pull-left">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <br />
+                        <h1 class="bold">Form Controls</h1>
+
+                        <h3>For entering information into a webpage.</h3>
+
+                        <br />
+
+                        <h3 class="bold">Input field</h3>
+                        <label>Field label:</label><br />
+                        <input type="text" class="pace-form-control" />
+
+                        <br /><br />
+
+                        <h3 class="bold">Textarea</h3>
+                        <label>Field label:</label><br />
+                        <textarea type="text" class="pace-form-control"></textarea>
+
+                        <br /><br />
+
+                        <h3 class="bold">Select dropdown</h3>
+                        <label>Field label:</label><br />
+                        <select class="pace-form-control">
+                            <option value="" selected>Select one</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+
+                        <br /><br />
+
+                        <h3 class="bold">Multiselect dropdown</h3>
+                        <label>Field label:</label><br />
+                        <div class="dropdown pace-dropdown">
+                            <button data-target="#multiselect" data-toggle="collapse" type="button" id="multiselect-button" role="button" class="pace-form-control dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                                Select multiple &nbsp; <span class="caret"></span>
+                            </button>
+                            <ul id="multiselect" class="dropdown-menu collapse">
+                                <li><label><input id="1" type="checkbox"> &nbsp;Option 1</label></li>
+                                <li><label><input id="2" type="checkbox"> &nbsp;Option 2</label></li>
+                                <li><label><input id="3" type="checkbox"> &nbsp;Option 3</label></li>
+                            </ul>
+                        </div>
+
+                        <br />
+
+                        <h3 class="bold">Multiselect dropdown with filter</h3>
+                        <label>Field label:</label><br />
+                        <div class="dropdown pace-dropdown">
+                            <button data-target="#multiselectFilter" data-toggle="collapse" type="button" id="multiselect-button" role="button" class="pace-form-control dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                                <input id="listFilter" onkeyup="filter()" type="text" placeholder="Filter List" /> &nbsp; <span class="caret"></span>
+                            </button>
+                            <ul id="multiselectFilter" class="dropdown-menu collapse">
+                                <li><label><input id="1" type="checkbox"> &nbsp;Option 1</label></li>
+                                <li><label><input id="2" type="checkbox"> &nbsp;Option 2</label></li>
+                                <li><label><input id="3" type="checkbox"> &nbsp;Option 3</label></li>
+                            </ul>
+                        </div>
+
+                        <br />
+
+                        <h3 class="bold">Sample form</h3>
+                        <form>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 col-xs-12">
+                                    <label>PACE Job #:</label><br />
+                                    <input type="text" class="pace-form-control full-width" title="PACE Job Number" />
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-12">
+                                    <label>Baseline Ready:</label><br />
+                                    <select class="pace-form-control full-width" title="Baseline Ready">
+                                        <option value="" selected>Select one</option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-12">
+                                    <label>Task Status:</label><br />
+                                    <div class="dropdown pace-dropdown" title="Task Status">
+                                        <button data-target="#multiselectSample" data-toggle="collapse" type="button" id="multiselect-button" role="button" class="pace-form-control dropdown-toggle full-width" aria-haspopup="true" aria-expanded="false">
+                                            <span class="pull-left">Select multiple</span> &nbsp; <span style="margin-top: .6em;" class="caret pull-right"></span>
+                                        </button>
+                                        <ul id="multiselectSample" class="dropdown-menu collapse">
+                                            <li><label><input id="Authorized" type="checkbox"> &nbsp;Authorized</label></li>
+                                            <li><label><input id="Active" type="checkbox"> &nbsp;Active</label></li>
+                                            <li><label><input id="Complete" type="checkbox"> &nbsp;Complete</label></li>
+                                            <li><label><input id="N/A" type="checkbox"> &nbsp;N/A</label></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <label>Comments:</label><br />
+                                    <textarea class="pace-form-control full-width" title="Comments"></textarea>
+                                </div>
+                            </div>
+                        </form>
+
+                        <br /><br />
+
+                        <div class="panel-group">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" data-toggle="collapse" href="#collapse1">
+                                    <h4 class="panel-title">
+                                        Code
+                                    </h4>
+                                </div>
+                                <div id="collapse1" class="panel-body panel-collapse collapse">
+<pre><xmp>
+<h3 class="bold">Input field</h3>
+<label>Field label:</label><br />
+<input type="text" class="pace-form-control" />
+
+<br /><br />
+
+<h3 class="bold">Textarea</h3>
+<label>Field label:</label><br />
+<textarea type="text" class="pace-form-control"></textarea>
+
+<br /><br />
+
+<h3 class="bold">Select dropdown</h3>
+<label>Field label:</label><br />
+<select class="pace-form-control">
+    <option value="" selected>Select one</option>
+    <option value="1">Option 1</option>
+    <option value="2">Option 2</option>
+    <option value="3">Option 3</option>
+</select>
+
+<br /><br />
+
+<h3 class="bold">Multiselect dropdown</h3>
+<label>Field label:</label><br />
+<div class="dropdown pace-dropdown">
+    <button data-target="#multiselect" data-toggle="collapse" type="button" id="multiselect-button" role="button" class="pace-form-control dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+        Select multiple &nbsp; <span class="caret"></span>
+    </button>
+    <ul id="multiselect" class="dropdown-menu collapse">
+        <li><label><input id="1" type="checkbox"> &nbsp;Option 1</label></li>
+        <li><label><input id="2" type="checkbox"> &nbsp;Option 2</label></li>
+        <li><label><input id="3" type="checkbox"> &nbsp;Option 3</label></li>
+    </ul>
+</div>
+
+<br />
+
+<h3 class="bold">Multiselect dropdown with filter</h3>
+<label>Field label:</label><br />
+<div class="dropdown pace-dropdown">
+    <button data-target="#multiselectFilter" data-toggle="collapse" type="button" id="multiselect-button" role="button" class="pace-form-control dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+        <input id="listFilter" onkeyup="filter()" type="text" placeholder="Filter List" /> &nbsp; <span class="caret"></span>
+    </button>
+    <ul id="multiselectFilter" class="dropdown-menu collapse">
+        <li><label><input id="1" type="checkbox"> &nbsp;Option 1</label></li>
+        <li><label><input id="2" type="checkbox"> &nbsp;Option 2</label></li>
+        <li><label><input id="3" type="checkbox"> &nbsp;Option 3</label></li>
+    </ul>
+</div>
+
+<br />
+
+<h3 class="bold">Sample form</h3>
+<form>
+    <div class="row">
+        <div class="col-md-4 col-sm-4 col-xs-12">
+            <label>PACE Job #:</label><br />
+            <input type="text" class="pace-form-control full-width" title="PACE Job Number" />
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+            <label>Baseline Ready:</label><br />
+            <select class="pace-form-control full-width" title="Baseline Ready">
+                <option value="" selected>Select one</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+            <label>Task Status:</label><br />
+            <div class="dropdown pace-dropdown" title="Task Status">
+                <button data-target="#multiselectSample" data-toggle="collapse" type="button" id="multiselect-button" role="button" class="pace-form-control dropdown-toggle full-width" aria-haspopup="true" aria-expanded="false">
+                    <span class="pull-left">Select multiple</span> &nbsp; <span style="margin-top: .6em;" class="caret pull-right"></span>
+                </button>
+                <ul id="multiselectSample" class="dropdown-menu collapse">
+                    <li><label><input id="Authorized" type="checkbox"> &nbsp;Authorized</label></li>
+                    <li><label><input id="Active" type="checkbox"> &nbsp;Active</label></li>
+                    <li><label><input id="Complete" type="checkbox"> &nbsp;Complete</label></li>
+                    <li><label><input id="N/A" type="checkbox"> &nbsp;N/A</label></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <label>Comments:</label><br />
+            <textarea class="pace-form-control full-width" title="Comments"></textarea>
+        </div>
+    </div>
+</form>
+</xmp></pre>
+                                </div>
+                            </div><!-- /.panel -->
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" data-toggle="collapse" href="#collapse2">
+                                    <h4 class="panel-title">
+                                        Documentation
+                                    </h4>
+                                </div>
+                                <div id="collapse2" class="panel-body panel-collapse collapse in">
+                                    <h2>About the Component</h2>
+                                    <h4>
+                                        Use the custom class <code>pace-form-control</code> to easily style form controls.
+                                        <br /><br />
+                                        When using a responsive grid layout, use the helper class <code>full-width</code> to make the form control span the full width of the grid container.
+                                    </h4>
+
+                                    <br />
+
+                                    <h2>Best Practices</h2>
+                                    <h4>Under construction.</h4>
+                                </div>
+                            </div><!-- /.panel -->
+                        </div><!-- /.panel-group -->
+
+                    </div>
+                </div><!-- /.row -->
+                <br />
+            </div><!-- /.container -->
+        </div><!-- /#page-content-wrapper -->
+        
+        <!-- SCRIPTS -->
+        <script src="assets/libraries/jquery/dist/jquery.js"></script>
+        <script src="assets/libraries/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+        <script src="assets/js/scripts.js"></script>
+
+    </div><!-- #wrapper -->
+</body>
+</html>

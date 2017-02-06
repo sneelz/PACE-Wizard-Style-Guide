@@ -1,0 +1,278 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1;maximum-scale=1.0; user-scalable=0;">
+
+    <title>PACE Wizard Style Guide</title>
+
+    <!-- Third Party CSS -->
+    <link rel="stylesheet" href="assets/libraries/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/libraries/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="assets/libraries/font-awesome/css/font-awesome.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/globals.css">
+    <link rel="stylesheet" href="assets/css/buttons.css">
+    <link rel="stylesheet" href="assets/css/navigation.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
+    <link rel="stylesheet" href="assets/css/pills.css">
+    <link rel="stylesheet" href="assets/css/table.css">
+    <link rel="stylesheet" href="assets/css/typography.css">
+    <link rel="stylesheet" href="assets/css/formcontrols.css">
+    <link rel="stylesheet" href="assets/css/colors.css">
+
+    <link rel="stylesheet" href="assets/css/styleguide.css">
+    
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header"></div>
+
+        <!-- MAIN CONTAINER -->
+        <div id="page-content-wrapper">
+            <div class="container pull-left">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <br />
+                        <h1 class="bold">Modals</h1>
+                        <h3>Modals are used for displaying supplementary functionality to standard content, such as bulk updating tasks or creating a custom view.</h3>
+                        <br />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div class="pace-modal modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="bold">Popup Title Here</h4>
+                                </div>
+
+                                <div class="modal-body text-center" style="min-height: 300px;">
+                                    [ Popup Content Here ]
+                                </div>
+
+                                <div class="modal-footer text-center">
+                                    <button type="button" class="pace-btn pace-btn-primary" data-dismiss="modal">Primary button</button>
+                                    <button type="button" class="pace-btn pace-btn-secondary" data-dismiss="modal">Secondary button</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <br /><br />
+
+                        <div class="panel-group">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" data-toggle="collapse" href="#collapse1">
+                                    <h4 class="panel-title">
+                                        Code
+                                    </h4>
+                                </div>
+                                <div id="collapse1" class="panel-body panel-collapse collapse">
+<pre><xmp>
+<div class="pace-modal modal-lg">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="bold">Popup Title Here</h4>
+        </div>
+        <div class="modal-body text-center" style="min-height: 300px;">
+            [ Popup Content Here ]
+        </div>
+        <div class="modal-footer text-center">
+            <button type="button" class="pace-btn pace-btn-primary" data-dismiss="modal">Primary button</button>
+            <button type="button" class="pace-btn pace-btn-secondary" data-dismiss="modal">Secondary button</button>
+        </div>
+    </div>
+</div>
+</xmp></pre>
+                                </div>
+                            </div><!-- /.panel -->
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" data-toggle="collapse" href="#collapse2">
+                                    <h4 class="panel-title">
+                                        Documentation
+                                    </h4>
+                                </div>
+                                <div id="collapse2" class="panel-body panel-collapse collapse in">
+                                    <h2>About the Component</h2>
+                                    <h4>
+                                        Modals are built off of Bootstrap's <code>modal</code>. Use the custom class <code>pace-modal</code> to achieve the appropriate PACE modal styling.
+                                    </h4>
+
+                                    <br />
+
+                                    <h2>Best Practices</h2>
+                                    <h4>
+                                        Use a modal popup when the user should complete an action one at a time. This ensures that the user cannot use the main interface while the modal popup is in view.
+                                        <br /><br />
+                                    </h4>
+                                    <button type="button" class="pace-btn pace-btn-primary" data-toggle="modal" data-target="#createModal">Click here to view sample 'Create View' modal</button>
+                                </div>
+                            </div><!-- /.panel -->
+                        </div><!-- /.panel-group -->
+
+                    </div>
+                </div><!-- /.row -->
+                <br />
+            </div><!-- /.container -->
+        </div><!-- /#page-content-wrapper -->
+        
+        <!-- CREATE VIEW MODAL -->
+        <div id="createModal" class="pace-modal modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!--CREATE VIEW MODAL CONTENT-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="bold">Create a Custom View</h4>
+                    </div><!-- /.modal-header -->
+
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <h5 class="bold">Custom View Name:</h5>
+                            </div>
+
+                            <div class="col-md-8 col-sm-8 col-xs-12">
+                                <input type="text" value="" class="pace-form-control" />
+                            </div>
+                        </div>
+
+                        <div class="horizontal-divider"></div>
+
+                        <div class="row">
+                            <!-- Start of drag and drop columns -->
+                            <div class="col-md-6 col-sm-6 col-xs-6 vertical-divider-right" style="min-height: 300px;">
+                                <h5 class="bold">Available Columns:</h5>
+                                <ul id="sortable1" class="connectedSortable option-list">
+                                    <li>Column 1</li>
+                                    <li>Column 2</li>
+                                    <li>Column 3</li>
+                                    <li>Column 4</li>
+                                    <li>Column 5</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                <h5 class="bold">Selected Columns:</h5>
+                                <ul id="sortable2" class="connectedSortable option-list">
+                                    <li>Column 6</li>
+                                    <li>Column 7</li>
+                                    <li>Column 8</li>
+                                    <li>Column 9</li>
+                                    <li>Column 10</li>
+                                    <li>Column 11</li>
+                                    <li>Column 12</li>
+                                    <li>Column 13</li>
+                                </ul>
+                            </div>
+                            <!-- End of drag and drop columns -->
+                        </div>
+
+                        <div class="horizontal-divider"></div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h5 class="bold">Select grouping</h5>
+                            </div>
+
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <select class="pace-form-control full-width">
+                                    <option value="" selected>First grouping</option>
+                                    <option value="grouping1">Grouping 1</option>
+                                    <option value="grouping2">Grouping 2</option>
+                                    <option value="grouping3">Grouping 3</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <select class="pace-form-control full-width">
+                                    <option value="" selected>Second grouping</option>
+                                    <option value="grouping1">Grouping 1</option>
+                                    <option value="grouping2">Grouping 2</option>
+                                    <option value="grouping3">Grouping 3</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <select class="pace-form-control full-width">
+                                    <option value="" selected>Third grouping</option>
+                                    <option value="grouping1">Grouping 1</option>
+                                    <option value="grouping2">Grouping 2</option>
+                                    <option value="grouping3">Grouping 3</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <br />
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h5 class="bold">Select sorting</h5>
+                            </div>
+
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <select class="pace-form-control full-width">
+                                    <option value="" selected>First column</option>
+                                    <option value="column1">Column 1</option>
+                                    <option value="column2">Column 2</option>
+                                    <option value="column3">Column 3</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <select class="pace-form-control full-width">
+                                    <option value="" selected>Second column</option>
+                                    <option value="column1">Column 1</option>
+                                    <option value="column2">Column 2</option>
+                                    <option value="column3">Column 3</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <select class="pace-form-control full-width">
+                                    <option value="" selected>Third column</option>
+                                    <option value="column1">Column 1</option>
+                                    <option value="column2">Column 2</option>
+                                    <option value="column3">Column 3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div><!-- /.modal-body -->
+
+                    <div class="modal-footer text-center">
+                        <button type="button" role="button" class="pace-btn pace-btn-primary" data-dismiss="modal">Create</button>
+                        <button type="button" role="button" class="pace-btn pace-btn-secondary" data-dismiss="modal">Cancel</button>
+                    </div><!-- /.modal-footer -->
+                </div>
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        
+        <!-- SCRIPTS -->
+        <script src="assets/libraries/jquery/dist/jquery.js"></script>
+        <script src="assets/libraries/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+        <script src="assets/js/scripts.js"></script>
+
+        <!-- DRAG AND DROP COLUMNS -->
+        <script>
+            $(function () {
+                $("#sortable1, #sortable2").sortable({
+                    connectWith: ".connectedSortable"
+                }).disableSelection();
+            });
+        </script>
+
+    </div><!-- #wrapper -->
+</body>
+</html>

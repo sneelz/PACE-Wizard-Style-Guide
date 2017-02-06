@@ -1,0 +1,322 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1;maximum-scale=1.0; user-scalable=0;">
+
+    <title>PACE Wizard Style Guide</title>
+
+    <!-- Third Party CSS -->
+    <link rel="stylesheet" href="assets/libraries/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/libraries/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="assets/libraries/font-awesome/css/font-awesome.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/globals.css">
+    <link rel="stylesheet" href="assets/css/buttons.css">
+    <link rel="stylesheet" href="assets/css/navigation.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
+    <link rel="stylesheet" href="assets/css/pills.css">
+    <link rel="stylesheet" href="assets/css/table.css">
+    <link rel="stylesheet" href="assets/css/typography.css">
+    <link rel="stylesheet" href="assets/css/formcontrols.css">
+    <link rel="stylesheet" href="assets/css/colors.css">
+
+    <link rel="stylesheet" href="assets/css/styleguide.css">
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header"></div>
+
+        <!--MAIN CONTAINER-->
+        <div id="page-content-wrapper">
+            <div class="container pull-left">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <br />
+                        <h1 class="bold">Tables</h1>
+
+                        <h3>For displaying and updating information within PACE Wizards.</h3>
+
+                        <br />
+
+                        <div class="pace-table-container">
+                            <table class="pace-table">
+                                <thead class="pace-bg-base">
+                                    <tr>
+                                        <th></th>
+                                        <th>Task Code</th>
+                                        <th>Task Name</th>
+                                        <th>Review Step Name</th>
+                                        <th>Task Status</th>
+                                        <th>Can be N/A</th>
+                                        <th>PACE Job #</th>
+                                        <th>FA Location Code</th>
+                                        <th>Task Assignee</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td>JI007</td>
+                                        <td>Feasibility Assessment</td>
+                                        <td>Feasibility Assessment</td>
+                                        <td>Active</td>
+                                        <td>Yes</td>
+                                        <td><a href="">MRUMW000001</a></td>
+                                        <td>1234567</td>
+                                        <td>
+                                            <select class="pace-form-control" title="Task Assignee">
+                                                <option value="jDoe">John Doe (ATT)</option>
+                                                <option value="mSue">Mary Sue (ATT)</option>
+                                                <option value="cWalker">Christopher Walker (BV)</option>
+                                                <option value="lDavids">Lary Davids (Ericsson)</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr disabled>
+                                        <td></td>
+                                        <td>SS019</td>
+                                        <td>Initial OOM Received</td>
+                                        <td>Initial OOM Received</td>
+                                        <td>Active</td>
+                                        <td>Yes</td>
+                                        <td><a href="">MRUMW000001</a></td>
+                                        <td>1234567</td>
+                                        <td>
+                                            <select class="pace-form-control" title="Task Assignee" disabled>
+                                                <option value="jDoe">John Doe (ATT)</option>
+                                                <option value="mSue">Mary Sue (ATT)</option>
+                                                <option value="cWalker">Christopher Walker (BV)</option>
+                                                <option value="lDavids">Lary Davids (Ericsson)</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>JI022</td>
+                                        <td>Preliminary RFDS Issued</td>
+                                        <td>Preliminary RFDS Issued</td>
+                                        <td>Active</td>
+                                        <td>Yes</td>
+                                        <td><a href="">MRUMW000001</a></td>
+                                        <td>1234567</td>
+                                        <td>
+                                            <select class="pace-form-control" title="Task Assignee">
+                                                <option value="jDoe">John Doe (ATT)</option>
+                                                <option value="mSue">Mary Sue (ATT)</option>
+                                                <option value="cWalker">Christopher Walker (BV)</option>
+                                                <option value="lDavids">Lary Davids (Ericsson)</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr class="has-edit">
+                                        <td><a href=""<i class="fa fa-pencil" aria-hidden="true" title="Discard Changes"></i></a></td>
+                                        <td>SS004</td>
+                                        <td>Site Audit Completed</td>
+                                        <td>Site Audit Completed</td>
+                                        <td>Active</td>
+                                        <td>Yes</td>
+                                        <td><a href="">MRUMW000001</a></td>
+                                        <td>1234567</td>
+                                        <td>
+                                            <select class="pace-form-control" title="Task Assignee">
+                                                <option value="jDoe">John Doe (ATT)</option>
+                                                <option value="mSue">Mary Sue (ATT)</option>
+                                                <option value="cWalker">Christopher Walker (BV)</option>
+                                                <option value="lDavids">Lary Davids (Ericsson)</option>
+                                            </select>
+                                            <a href=""><i class="fa fa-pencil" aria-hidden="true" title="Discard Changes"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>SS048</td>
+                                        <td>SA OOM Loaded</td>
+                                        <td>SA OOM Loaded</td>
+                                        <td>Active</td>
+                                        <td>Yes</td>
+                                        <td><a href="">MRUMW000001</a></td>
+                                        <td>1234567</td>
+                                        <td>
+                                            <select class="pace-form-control" title="Task Assignee">
+                                                <option value="jDoe">John Doe (ATT)</option>
+                                                <option value="mSue">Mary Sue (ATT)</option>
+                                                <option value="cWalker">Christopher Walker (BV)</option>
+                                                <option value="lDavids">Lary Davids (Ericsson)</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+                        <br /><br />
+
+                        <div class="panel-group">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" data-toggle="collapse" href="#collapse1">
+                                    <h4 class="panel-title">
+                                        Code
+                                    </h4>
+                                </div>
+                                <div id="collapse1" class="panel-body panel-collapse collapse">
+<pre><xmp>
+<div class="pace-table-container">
+    <table class="pace-table">
+        <thead class="pace-bg-base">
+            <tr>
+                <th></th>
+                <th>Task Code</th>
+                <th>Task Name</th>
+                <th>Review Step Name</th>
+                <th>Task Status</th>
+                <th>Can be N/A</th>
+                <th>PACE Job #</th>
+                <th>FA Location Code</th>
+                <th>Task Assignee</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td>JI007</td>
+                <td>Feasibility Assessment</td>
+                <td>Feasibility Assessment</td>
+                <td>Active</td>
+                <td>Yes</td>
+                <td><a href="">MRUMW000001</a></td>
+                <td>1234567</td>
+                <td>
+                    <select class="pace-form-control" title="Task Assignee">
+                        <option value="jDoe">John Doe (ATT)</option>
+                        <option value="mSue">Mary Sue (ATT)</option>
+                        <option value="cWalker">Christopher Walker (BV)</option>
+                        <option value="lDavids">Lary Davids (Ericsson)</option>
+                    </select>
+                </td>
+            </tr>
+            <tr disabled>
+                <td></td>
+                <td>SS019</td>
+                <td>Initial OOM Received</td>
+                <td>Initial OOM Received</td>
+                <td>Active</td>
+                <td>Yes</td>
+                <td><a href="">MRUMW000001</a></td>
+                <td>1234567</td>
+                <td>
+                    <select class="pace-form-control" title="Task Assignee" disabled>
+                        <option value="jDoe">John Doe (ATT)</option>
+                        <option value="mSue">Mary Sue (ATT)</option>
+                        <option value="cWalker">Christopher Walker (BV)</option>
+                        <option value="lDavids">Lary Davids (Ericsson)</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>JI022</td>
+                <td>Preliminary RFDS Issued</td>
+                <td>Preliminary RFDS Issued</td>
+                <td>Active</td>
+                <td>Yes</td>
+                <td><a href="">MRUMW000001</a></td>
+                <td>1234567</td>
+                <td>
+                    <select class="pace-form-control" title="Task Assignee">
+                        <option value="jDoe">John Doe (ATT)</option>
+                        <option value="mSue">Mary Sue (ATT)</option>
+                        <option value="cWalker">Christopher Walker (BV)</option>
+                        <option value="lDavids">Lary Davids (Ericsson)</option>
+                    </select>
+                </td>
+            </tr>
+            <tr class="has-edit">
+                <td><a href=""<i class="fa fa-pencil" aria-hidden="true" title="Discard Changes"></i></a></td>
+                <td>SS004</td>
+                <td>Site Audit Completed</td>
+                <td>Site Audit Completed</td>
+                <td>Active</td>
+                <td>Yes</td>
+                <td><a href="">MRUMW000001</a></td>
+                <td>1234567</td>
+                <td>
+                    <select class="pace-form-control" title="Task Assignee">
+                        <option value="jDoe">John Doe (ATT)</option>
+                        <option value="mSue">Mary Sue (ATT)</option>
+                        <option value="cWalker">Christopher Walker (BV)</option>
+                        <option value="lDavids">Lary Davids (Ericsson)</option>
+                    </select>
+                    <a href=""><i class="fa fa-pencil" aria-hidden="true" title="Discard Changes"></i></a>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>SS048</td>
+                <td>SA OOM Loaded</td>
+                <td>SA OOM Loaded</td>
+                <td>Active</td>
+                <td>Yes</td>
+                <td><a href="">MRUMW000001</a></td>
+                <td>1234567</td>
+                <td>
+                    <select class="pace-form-control" title="Task Assignee">
+                        <option value="jDoe">John Doe (ATT)</option>
+                        <option value="mSue">Mary Sue (ATT)</option>
+                        <option value="cWalker">Christopher Walker (BV)</option>
+                        <option value="lDavids">Lary Davids (Ericsson)</option>
+                    </select>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</xmp></pre>
+                                </div>
+                            </div><!-- /.panel -->
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" data-toggle="collapse" href="#collapse2">
+                                    <h4 class="panel-title">
+                                        Documentation
+                                    </h4>
+                                </div>
+                                <div id="collapse2" class="panel-body panel-collapse collapse in">
+                                    <h2>About the Component</h2>
+                                    <h4>
+                                        Wrap tables in the <code>pace-table-container</code> and add the custom class <code>pace-table</code> to tables in order to apply PACE table styling.
+                                        <br /><br />
+                                        Use the custom background-color CSS classes to easily style table headings, i.e. <code>pace-bg-base</code>
+                                    </h4>
+
+                                    <br />
+
+                                    <h2>Best Practices</h2>
+                                    <h4>Under construction.</h4>
+                                </div>
+                            </div><!-- /.panel -->
+                        </div><!-- /.panel-group -->
+
+                    </div>
+                </div><!-- /.row -->
+                <br />
+            </div><!-- /.container -->
+        </div><!-- /#page-content-wrapper -->
+        
+        <!-- SCRIPTS -->
+        <script src="assets/libraries/jquery/dist/jquery.js"></script>
+        <script src="assets/libraries/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+        <script src="assets/js/scripts.js"></script>
+
+    </div><!-- #wrapper -->
+</body>
+</html>

@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1;maximum-scale=1.0; user-scalable=0;">
+
+    <title>PACE Wizard Style Guide</title>
+
+    <!-- Third Party CSS -->
+    <link rel="stylesheet" href="assets/libraries/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/libraries/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="assets/libraries/font-awesome/css/font-awesome.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/globals.css">
+    <link rel="stylesheet" href="assets/css/buttons.css">
+    <link rel="stylesheet" href="assets/css/navigation.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
+    <link rel="stylesheet" href="assets/css/pills.css">
+    <link rel="stylesheet" href="assets/css/table.css">
+    <link rel="stylesheet" href="assets/css/typography.css">
+    <link rel="stylesheet" href="assets/css/formcontrols.css">
+    <link rel="stylesheet" href="assets/css/colors.css">
+
+    <link rel="stylesheet" href="assets/css/styleguide.css">
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header"></div>
+
+        <!--MAIN CONTAINER-->
+        <div id="page-content-wrapper">
+            <div class="container pull-left">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <br />
+                        <h1 class="bold">Buttons & Icons</h1>
+
+                        <h3>For signaling a call to action.</h3>
+
+                        <br />
+
+                        <h4 class="bold">Primary</h4>
+                        <button class="pace-btn pace-btn-primary" role="button" type="button">Default</button>
+                        <button class="pace-btn pace-btn-primary-hover" role="button" type="button">Hover</button>
+                        <button class="pace-btn pace-btn-primary-active" role="button" type="button">Active</button>
+                        <br /><br />
+
+                        <h4 class="bold">Secondary</h4>
+                        <button class="pace-btn pace-btn-secondary" role="button" type="button">Default</button>
+                        <button class="pace-btn pace-btn-secondary-hover" role="button" type="button">Hover</button>
+                        <button class="pace-btn pace-btn-secondary-active" role="button" type="button">Active</button>
+                        <br /><br />
+
+                        <h4 class="bold">Default</h4>
+                        <button class="pace-btn pace-btn-default" role="button" type="button">Default</button>
+                        <button class="pace-btn pace-btn-default-hover" role="button" type="button">Hover</button>
+                        <button class="pace-btn pace-btn-default-active" role="button" type="button">Active</button>
+                        <br /><br />
+
+                        <h4 class="bold">Disabled</h4>
+                        <button class="pace-btn" role="button" type="button" disabled>Default</button>
+                        <br /><br />
+
+                        <h4 class="bold">Large Button</h4>
+                        <button class="pace-btn-lg pace-btn-primary" role="button" type="button">Default</button>
+                        <br /><br />
+
+                        <h4 class="bold">Icons</h4>
+                        <button class="pace-btn pace-btn-secondary" role="button" type="button" title="Refresh"><i class="fa fa-refresh" aria-hidden="true"></i></button> Refresh<br />
+                        <button class="pace-btn pace-btn-secondary" role="button" type="button" title="Export"><i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i></button> Export<br />
+                        <button class="pace-btn pace-btn-secondary" role="button" type="button" title="Edit"><i class="fa fa-pencil" aria-hidden="true"></i></button> Edit<br />
+                        <button class="pace-btn pace-btn-secondary" role="button" type="button" title="Copy"><i class="fa fa-copy" aria-hidden="true"></i></button> Copy<br />
+                        <button class="pace-btn pace-btn-secondary" role="button" type="button" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i></button> Delete<br />
+
+                        <br /><br />
+
+                        <div class="panel-group">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" data-toggle="collapse" href="#collapse1">
+                                    <h4 class="panel-title">
+                                        Code
+                                    </h4>
+                                </div>
+                                <div id="collapse1" class="panel-body panel-collapse collapse">
+<pre><xmp>
+<h4 class="bold">Primary</h4>
+<button class="pace-btn pace-btn-primary" role="button" type="button">Default</button>
+<button class="pace-btn pace-btn-primary-hover" role="button" type="button">Hover</button>
+<button class="pace-btn pace-btn-primary-active" role="button" type="button">Active</button>
+<br /><br />
+
+<h4 class="bold">Secondary</h4>
+<button class="pace-btn pace-btn-secondary" role="button" type="button">Default</button>
+<button class="pace-btn pace-btn-secondary-hover" role="button" type="button">Hover</button>
+<button class="pace-btn pace-btn-secondary-active" role="button" type="button">Active</button>
+<br /><br />
+
+<h4 class="bold">Default</h4>
+<button class="pace-btn pace-btn-default" role="button" type="button">Default</button>
+<button class="pace-btn pace-btn-default-hover" role="button" type="button">Hover</button>
+<button class="pace-btn pace-btn-default-active" role="button" type="button">Active</button>
+<br /><br />
+
+<h4 class="bold">Disabled</h4>
+<button class="pace-btn" role="button" type="button" disabled>Default</button>
+<br /><br />
+
+<h4 class="bold">Large Button</h4>
+<button class="pace-btn-lg pace-btn-primary" role="button" type="button">Default</button>
+<br /><br />
+
+<h4 class="bold">Icons</h4>
+<button class="pace-btn pace-btn-secondary" role="button" type="button" title="Refresh"><i class="fa fa-refresh" aria-hidden="true"></i></button> Refresh<br />
+<button class="pace-btn pace-btn-secondary" role="button" type="button" title="Export"><i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i></button> Export<br />
+<button class="pace-btn pace-btn-secondary" role="button" type="button" title="Edit"><i class="fa fa-pencil" aria-hidden="true"></i></button> Edit<br />
+<button class="pace-btn pace-btn-secondary" role="button" type="button" title="Copy"><i class="fa fa-copy" aria-hidden="true"></i></button> Copy<br />
+<button class="pace-btn pace-btn-secondary" role="button" type="button" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i></button> Delete<br />
+</xmp></pre>
+                                </div>
+                            </div><!-- /.panel -->
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" data-toggle="collapse" href="#collapse2">
+                                    <h4 class="panel-title">
+                                        Documentation
+                                    </h4>
+                                </div>
+                                <div id="collapse2" class="panel-body panel-collapse collapse in">
+                                    <h2>About the Component</h2>
+                                    <h4>
+                                        Add the custom CSS class <code>pace-btn</code> in combination with one of the following classes to achieve the appropriate PACE button styling.
+                                        <br /><br />
+                                        <ul>
+                                            <li><code>pace-btn-primary</code></li>
+                                            <li><code>pace-btn-secondary</code></li>
+                                            <li><code>pace-btn-default</code></li>
+                                        </ul>
+                                    </h4>
+
+                                    <br />
+
+                                    <h2>Best Practices</h2>
+                                    <h4>Primary and secondary buttons are to be decided on a per wizard basis. Primary buttons are used for key calls to action, such as [Search] and [Submit]. Secondary buttons are used for optional calls to action, such as [Reset] and [Export].</h4>
+                                </div>
+                            </div><!-- /.panel -->
+                        </div><!-- /.panel-group -->
+
+                    </div>
+                </div><!-- /.row -->
+                <br />
+            </div><!-- /.container -->
+        </div><!-- /#page-content-wrapper -->
+        
+        <!-- SCRIPTS -->
+        <script src="assets/libraries/jquery/dist/jquery.js"></script>
+        <script src="assets/libraries/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+        <script src="assets/js/scripts.js"></script>
+    
+    </div><!-- #wrapper -->
+</body>
+</html>
