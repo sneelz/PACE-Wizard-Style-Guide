@@ -1,0 +1,83 @@
+﻿/* > PACE COLORS CSS: START
+***********************************************************************************************************************/
+	/**************************************************************************************************************/
+	/*
+	********
+	********
+	********
+	*/
+	/* >> NOTES: START
+	***************************************************************************************************************/
+
+	/* TOC:
+	-	PACE STYLE GUIDE CSS
+            - NOTES
+			- PACE BACKGROUND COLORS
+	*/
+
+	/* NOTES: END
+	***************************************************************************************************************/
+	/*
+	********
+	********
+	********
+	*/
+	/* >> PACE BACKGROUND COLORS: START
+	***************************************************************************************************************/
+
+        .pace-bg-primary {
+            background: #0b9ed9;
+            background-color: #0b9ed9;
+            color: #ffffff;
+        }
+
+        .pace-bg-primary a {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        .pace-bg-primary-darker {
+            background: #04518a;
+            background-color: #0468ae;
+            color: #ffffff;
+        }
+
+        .pace-bg-primary-darker a {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        .pace-bg-primary a:hover,
+        .pace-bg-primary-darker a:hover {
+            opacity: .8;
+        }
+
+        .pace-bg-primary-darkest {
+            background: #062953;
+            background-color: #062953;
+            color: #ffffff;
+        }
+
+        .pace-bg-base {
+            background: #222222;
+            background-color: #222222;
+            color: #ffffff;
+        }
+
+        .pace-bg-gray {
+            background: #dddddd;
+            background-color: #dddddd;
+            color: #222222;
+        }
+
+        .pace-bg-white {
+            background: #ffffff;
+            background-color: #ffffff;
+            color: #222222;
+        }
+
+    /* PACE BACKGROUND COLORS: END
+    ***************************************************************************************************************/
+	
+/* PACE COLORS CSS: END
+***********************************************************************************************************************/

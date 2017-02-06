@@ -1,0 +1,78 @@
+﻿/* > PACE FORM CONTROL CSS: START
+***********************************************************************************************************************/
+	/**************************************************************************************************************/
+	/*
+	********
+	********
+	********
+	*/
+	/* >> NOTES: START
+	***************************************************************************************************************/
+
+	/* TOC:
+	-	PACE FORM CONTROL CSS
+            - NOTES
+			- PACE FORM CONTROL
+            - PACE DROPDOWN
+	*/
+
+	/* NOTES: END
+	***************************************************************************************************************/
+	/*
+	********
+	********
+	********
+	*/
+	/* >> PACE FORM CONTROL: START
+	***************************************************************************************************************/
+
+        .pace-form-control {
+            border: 1px #cccccc solid;
+            background: #ffffff;
+            background-color: #ffffff;
+            color: #333333;
+            font-size: 1em !important;
+            font-family: 'Source Sans Pro', 'sans-serif', 'Arial';
+            padding: 5px 10px 5px 10px;
+            margin-right: 5px;
+            border-radius: 3px;
+        }
+
+    /* PACE FORM CONTROL: END
+    ***************************************************************************************************************/
+    /*
+	********
+	********
+	********
+	*/
+	/* >> PACE DROPDOWN: START
+	***************************************************************************************************************/
+
+        .pace-dropdown input {
+            border: 0;
+        }
+
+        .pace-dropdown .dropdown-menu {
+            font-size: 1em !important;
+            min-width: 300px;
+        }
+
+        .pace-dropdown .dropdown-menu li {
+            padding: 0 10px;
+        }
+
+        .pace-dropdown .dropdown-menu li:hover {
+            background: #f1f1f1;
+            background-color: #f1f1f1;
+        }
+
+        .pace-dropdown .dropdown-menu li label:hover,
+        .pace-dropdown .dropdown-menu li input[type=checkbox]:hover {
+            cursor: pointer;
+        }
+
+    /* PACE DROPDOWN: END
+    ***************************************************************************************************************/
+	
+/* PACE FORM CONTROL CSS: END
+***********************************************************************************************************************/

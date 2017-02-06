@@ -1,0 +1,114 @@
+﻿/* > PACE NAVIGATION CSS: START
+***********************************************************************************************************************/
+	/**************************************************************************************************************/
+	/*
+	********
+	********
+	********
+	*/
+	/* >> NOTES: START
+	***************************************************************************************************************/
+
+	/* TOC:
+	-	PACE NAVIGATION CSS
+            - NOTES
+			- PACE NAVBAR
+            - MOBILE RESPONSIVE NAVBAR
+	*/
+
+	/* NOTES: END
+	***************************************************************************************************************/
+	/*
+	********
+	********
+	********
+	*/
+	/* >> PACE NAVBAR: START
+	***************************************************************************************************************/
+
+        .pace-navbar {
+            background: #0b9ed9;
+            background-color: #0b9ed9;
+            color: #ffffff;
+            height: 50px;
+            border: 0;
+            font-size: 1.1em;
+            z-index: 110;
+            border-radius: 0;
+        }     
+
+        .pace-navbar .navbar-nav > li > a {
+            cursor: pointer;
+            text-decoration: none;
+            color: #ffffff;
+            opacity: .9;
+        }
+
+        .pace-navbar .navbar-nav > li > a:hover,
+        .pace-navbar .navbar-nav > li > a:focus,
+        .pace-navbar .navbar-brand,
+        .pace-navbar .navbar-brand:hover,
+        .pace-navbar .navbar-brand:focus {
+            color: white;
+            opacity: 1;
+            text-decoration: none;
+        }
+
+        .pace-navbar .navbar-toggle {
+            display: none;
+        }
+
+        .pace-navbar .dropdown-menu {
+            background: #0b9ed9;
+            background-color: #0b9ed9;
+            color: #ffffff;
+            min-width: 550px;
+            overflow-x: hidden;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        .pace-navbar .dropdown-menu li > a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        .pace-navbar .dropdown-menu li > a:hover {
+            text-decoration: underline;
+            color: #ffffff;
+        }
+
+    /* PACE NAVBAR: END
+    ***************************************************************************************************************/
+    /*
+	********
+	********
+	********
+	*/
+    /* >> MOBILE RESPONSIVE NAVBAR: START
+	***************************************************************************************************************/
+
+        @media screen and (max-width: 768px){
+            .pace-navbar {
+                height: auto;
+            }
+            .pace-navbar .navbar-toggle {
+                display: block;
+                background: #ffffff;
+                background-color: #ffffff;
+            }
+            .pace-navbar .navbar-nav .open .dropdown-menu > li > a {
+                text-decoration: none;
+                color: #ffffff;
+            }
+            .pace-navbar .navbar-nav .open .dropdown-menu > li > a:hover {
+                text-decoration: none;
+                background: #f1f1f1;
+            }
+        }
+
+    /* MOBILE RESPONSIVE NAVBAR: END
+	***************************************************************************************************************/
+	
+/* PACE NAVIGATION: END
+***********************************************************************************************************************/

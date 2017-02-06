@@ -1,0 +1,204 @@
+﻿/* > PACE BUTTONS CSS: START
+***********************************************************************************************************************/
+	/**************************************************************************************************************/
+	/*
+	********
+	********
+	********
+	*/
+	/* >> NOTES: START
+	***************************************************************************************************************/
+
+	/* TOC:
+	-	PACE BUTTONS CSS
+            - NOTES
+            - PACE BUTTON
+			- PRIMARY BUTTON
+            - SECONDARY BUTTON
+	*/
+
+	/* NOTES: END
+	***************************************************************************************************************/
+	/*
+	********
+	********
+	********
+	*/
+    /* >> PACE BUTTON: START
+	***************************************************************************************************************/
+
+        .pace-btn {
+            cursor: pointer;
+            font-size: 1em !important;
+            font-family: 'Source Sans Pro', 'sans-serif', 'Arial';
+            padding: .25em .75em;
+            margin: 5px;
+            border-radius: 3px;
+            border: 0;
+        }
+
+        .pace-btn-lg {
+            cursor: pointer;
+            font-size: 1.2em !important;
+            font-family: 'Source Sans Pro', 'sans-serif', 'Arial';
+            padding: .5em 1.25em;
+            margin: 5px;
+            border-radius: 3px;
+            border: 0;
+        }
+
+        .pace-btn-lg:hover,
+        .pace-btn:hover {
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+        }
+
+    /* PACE BUTTON: END
+    ***************************************************************************************************************/
+    /*
+	********
+	********
+	********
+	*/
+	/* >> PRIMARY BUTTON: START
+	***************************************************************************************************************/
+
+        .pace-btn-primary {
+            border: 1px #0b9ed9 solid;
+            background: #0b9ed9;
+            background-color: #0b9ed9;
+            color: #ffffff;
+        }
+
+        .pace-btn-primary:hover {
+            border: 1px #0468ae solid;
+            background: #0468ae;
+            background-color: #0468ae;
+            color: #ffffff;
+        }
+
+        .pace-btn-primary:active {
+            border: 1px #062953 solid;
+            background: #062953;
+            background-color: #062953;
+            color: #ffffff;
+        }
+
+        /*
+        # Primary button hover state */
+        .pace-btn-primary-hover {
+            border: 1px #0468ae solid;
+            background: #0468ae;
+            background-color: #0468ae;
+            color: #ffffff;
+        }
+
+        /*
+        # Primary button active state */
+        .pace-btn-primary-active {
+            border: 1px #062953 solid;
+            background: #062953;
+            background-color: #062953;
+            color: #ffffff;
+        }
+
+        .pace-btn-primary-hover:hover,
+        .pace-btn-primary-active:hover {
+            color: #ffffff;
+        }
+
+    /* PRIMARY BUTTON: END
+    ***************************************************************************************************************/
+    /*
+	********
+	********
+	********
+	*/
+	/* >> SECONDARY BUTTON: START
+	***************************************************************************************************************/
+
+        .pace-btn-secondary {
+            border: 1px #0b9ed9 solid;
+            background: transparent;
+            background-color: transparent;
+            color: #0b9ed9;
+        }
+
+        .pace-btn-secondary:hover {
+            border: 1px #0468ae solid;
+            color: #0468ae;
+        }
+
+        .pace-btn-secondary:active {
+            border: 1px #062953 solid;
+            color: #062953;
+        }
+
+        /*
+        # Secondary button hover state */
+        .pace-btn-secondary-hover {
+            border: 1px #0468ae solid;
+            background: transparent;
+            background-color: transparent;
+            color: #0468ae;
+        }
+
+        /*
+        # Secondary button active state */
+        .pace-btn-secondary-active {
+            border: 1px #062953 solid;
+            background: transparent;
+            background-color: transparent;
+            color: #062953;
+        }
+
+    /* SECONDARY BUTTON: END
+    ***************************************************************************************************************/
+    /*
+	********
+	********
+	********
+	*/
+	/* >> DEFAULT BUTTON: START
+	***************************************************************************************************************/
+
+        .pace-btn-default {
+            border: 1px #cccccc solid;
+            background: #ffffff;
+            background-color: #ffffff;
+            color: #333333;
+        }
+
+        .pace-btn-default:hover {
+            background: #f1f1f1;
+            background-color: #f1f1f1;
+        }
+
+        .pace-btn-default:active {
+            background: #dddddd;
+            background-color: #dddddd;
+        }
+
+        /*
+        # Default button hover state */
+        .pace-btn-default-hover {
+            border: 1px #cccccc solid;
+            background: #f1f1f1;
+            background-color: #f1f1f1;
+        }
+
+        /*
+        # Default button active state */
+        .pace-btn-default-active {
+            border: 1px #cccccc solid;
+            background: #dddddd;
+            background-color: #dddddd;
+        }
+
+    /* DEFAULT BUTTON: END
+    ***************************************************************************************************************/
+	
+/* PACE BUTTONS CSS: END
+***********************************************************************************************************************/

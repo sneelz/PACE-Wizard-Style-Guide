@@ -1,0 +1,189 @@
+﻿/* > PACE STYLE GUIDE CSS: START
+***********************************************************************************************************************/
+	/**************************************************************************************************************/
+	/*
+	********
+	********
+	********
+	*/
+	/* >> NOTES: START
+	***************************************************************************************************************/
+
+	/* TOC:
+	-	PACE STYLE GUIDE CSS
+            - NOTES
+			- STYLE GUIDE SIDEBAR
+            - STYLE GUIDE PANEL
+            - STYLE GUIDE MISC
+	*/
+
+	/* NOTES: END
+	***************************************************************************************************************/
+	/*
+	********
+	********
+	********
+	*/
+	/* >> STYLE GUIDE BUTTONS: START
+	***************************************************************************************************************/
+
+        .sg-btns {
+            position: fixed; 
+            z-index: 100; 
+            width: 100%;
+            margin-left: 5px;
+        }
+
+        .download-btns {
+             position: fixed; 
+             right: 0;
+             margin-right: 5px;
+        }
+
+    /* STYLE GUIDE BUTTONS: END
+    ***************************************************************************************************************/
+    /*
+	********
+	********
+	********
+	*/
+    /* >> WRAPPER + SIDEBAR: START
+	***************************************************************************************************************/
+
+        #wrapper {
+            padding-left: 0;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+        }
+
+        #wrapper.toggled {
+            padding-left: 100px;
+        }
+
+        #sidebar-wrapper {
+            z-index: 1000;
+            position: fixed;
+            left: 100px;
+            width: 0;
+            height: 100%;
+            overflow-y: auto;
+            margin-left: -100px;
+            background: #222222;
+            background-color: #222222;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+        }
+
+        #sidebar-wrapper .list-group-item {
+            background: transparent !important;
+            background-color: transparent !important;
+            border: 0;
+        }
+
+        #sidebar-wrapper a {
+            color: #ffffff !important;
+            opacity: .8 !important;
+            text-decoration: none;
+        }
+
+        #sidebar-wrapper a:hover {
+            opacity: 1 !important;
+        }
+
+        #wrapper.toggled #sidebar-wrapper {
+            width: 100px;
+        }
+
+        #page-content-wrapper {
+            width: 100%;
+        }
+
+        #wrapper.toggled #page-content-wrapper {
+            margin-right: -100px;
+        }
+
+    /* WRAPPER + SIDEBAR: END
+    ***************************************************************************************************************/	
+    /*
+	********
+	********
+	********
+	*/
+    /* >> MOBILE RESPONSIVE SIDEBAR: START
+	***************************************************************************************************************/
+
+        @media (min-width: 768px) {
+            #wrapper {
+                padding-left: 100px;
+            }
+
+            #wrapper.toggled {
+                padding-left: 0;
+            }
+
+            #sidebar-wrapper {
+                width: 100px;
+            }
+
+            #wrapper.toggled #sidebar-wrapper {
+                width: 0;
+            }
+
+            #page-content-wrapper {
+                padding: 15px;
+                position: relative;
+            }
+
+            #wrapper.toggled #page-content-wrapper {
+                position: relative;
+                margin-right: 0;
+            }
+        }
+
+    /* MOBILE RESPONSIVE SIDEAR: END
+	***************************************************************************************************************/
+	/*
+	********
+	********
+	********
+	*/
+	/* >> STYLE GUIDE PANEL: START
+	***************************************************************************************************************/
+
+        /*
+        # Override Bootstrap panel */
+        .panel-group .panel {
+            margin-bottom: 10px !important;
+        }
+
+        .panel-heading {
+            background: #eeeeee !important;
+            background-color: #eeeeee !important;
+            cursor: pointer;
+            border: 1px #dddddd solid !important;
+        }
+
+    /* STYLE GUIDE PANEL: END
+    ***************************************************************************************************************/
+    /*
+	********
+	********
+	********
+	*/
+	/* >> STYLE GUIDE MISC: START
+	***************************************************************************************************************/
+
+        .color {
+            height: 200px;
+            padding: 15px;
+        }
+
+    /* STYLE GUIDE MISC: END
+    ***************************************************************************************************************/
+	
+/* PACE STYLE GUIDE CSS: END
+***********************************************************************************************************************/

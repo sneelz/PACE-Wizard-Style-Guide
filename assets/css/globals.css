@@ -1,0 +1,149 @@
+﻿/* > PACE GLOBALS CSS: START
+***********************************************************************************************************************/
+	/**************************************************************************************************************/
+	/*
+	********
+	********
+	********
+	*/
+	/* >> NOTES: START
+	***************************************************************************************************************/
+
+	/* TOC:
+	-	PACE GLOBALS CSS
+            - NOTES
+			- GENERAL GLOBALS
+            - HELPERS
+	*/
+
+	/* NOTES: END
+	***************************************************************************************************************/
+	/*
+	********
+	********
+	********
+	*/
+	/* >> GENERAL GLOBALS: START
+	***************************************************************************************************************/
+
+        @font-face {
+            font-family: Omnes;
+            src: url(/assets/fonts/OmnesATTRegular.otf) format("opentype");
+        }
+
+        @font-face {
+            font-family: Aleck;
+            src: url(/assets/fonts/ATTAleckSans_Rg.ttf) format("opentype");
+        }
+
+        @font-face {
+            font-family: Source Sans Pro;
+            src: url(/assets/fonts/SourceSansPro-Regular.ttf) format("opentype");
+        }
+
+        body {
+            font-family: 'Source Sans Pro', 'sans-serif', 'Arial';
+            overflow-x: hidden;
+            font-size: 16px;
+        }
+
+        a,
+        button,
+        select,
+        input[type=checkbox],
+        input[type=radio] {
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        input,
+        textarea,
+        select,
+        label,
+        button,
+        p {
+            font-family: 'Source Sans Pro', 'sans-serif', 'Arial';
+            font-weight: 400;
+        }
+
+        [disabled] {
+            background: #f1f1f1 !important;
+            background-color: #f1f1f1 !important;
+            color: #888888 !important;
+        }
+
+        /*
+        # Aleck header font */
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Aleck', 'sans-serif', 'Arial';
+        }
+    
+    /* GENERAL GLOBALS: END
+	***************************************************************************************************************/
+    /*
+	********
+	********
+	********
+	*/
+	/* >> HELPERS: START
+	***************************************************************************************************************/
+
+        /*
+        # Display objects inline */
+        .inline {
+            display: inline-block !important;
+        }
+
+        /*
+        # Dividers */
+        .horizontal-divider {
+            border-top: 1px #dddddd solid;
+            width: 100%;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        .vertical-divider-right {
+            border-right: 1px #dddddd solid;
+        }
+
+        .vertical-divider-left {
+            border-left: 1px #dddddd solid;
+        }
+
+        /*
+        # Helper classes */
+        .full-width {
+            width: 100% !important;
+            min-width: 100% !important;
+            max-width: 100% !important;
+        }
+
+        .full-height {
+            height: 100% !important;
+            min-height: 100% !important;
+            max-height: 100% !important;
+        }
+
+        .padding-none {
+            padding: 0 !important;
+        }
+
+        .margin-none {
+            margin: 0 !important;
+        }
+
+        .border-none {
+            border: 0 !important;
+        }
+
+    /* HELPERS: END
+    ***************************************************************************************************************/
+	
+/* PACE GLOBALS CSS: END
+***********************************************************************************************************************/
