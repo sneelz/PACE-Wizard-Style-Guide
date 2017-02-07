@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1;maximum-scale=1.0; user-scalable=0;">
 
-    <title>Task Update Wizard</title>
+    <title>Change Request Approval Wizard</title>
 
     <!-- Third Party CSS -->
     <link rel="stylesheet" href="assets/libraries/bootstrap/dist/css/bootstrap.min.css">
@@ -43,7 +43,7 @@
                 <a class="navbar-brand" href="">
                     <img src="assets/img/att-globe-white.png" class="inline" />
                     <div class="inline">
-                        PACE Task Update Wizard<br />
+                        PACE Change Request Approval Wizard<br />
                         <span class="pace-text-xs">Version 2.1.1</span>
                     </div>
                 </a>
@@ -96,107 +96,138 @@
                 <thead class="pace-bg-base">
                     <tr>
                         <th></th>
-                        <th>Task Code</th>
-                        <th>Task Name</th>
-                        <th>Review Step Name</th>
-                        <th>Task Status</th>
-                        <th>Can be N/A</th>
-                        <th>PACE Job #</th>
-                        <th>FA Location Code</th>
-                        <th>Task Assignee</th>
+                        <th>Approve</th>
+                        <th>Reject</th>
+                        <th>CR Number</th>
+                        <th>Status</th>
+                        <th>Approver Notes</th>
+                        <th>Region</th>
+                        <th>Market</th>
+                        <th>Submarket</th>
+                        <th>File Attached</th>
+                        <th>Plan Impact</th>
+                        <th>Program</th>
+                        <th>Detailed Scope</th>
+                        <th>Submitted By</th>
+                        <th>Submitted to Approver</th>
+                        <th>Previous Approver</th>
+                        <th>Rejection Reason</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
+                        <td class="text-center">+</td>
+                        <td class="text-center"><input type="checkbox"/></td>
+                        <td class="text-center"><input type="checkbox" /></td>
+                        <td><a href="">MRTNK000478CR</a></td>
+                        <td>CR Open - Approver 4</td>
+                        <td class="text-center"><button type="button" role="button" class="pace-btn pace-btn-secondary">View/Add</button></tdclass="text-center">
+                        <td>RSCW</td>
+                        <td>RTNK</td>
                         <td></td>
-                        <td>JI007</td>
-                        <td>Feasibility Assessment</td>
-                        <td>Feasibility Assessment</td>
-                        <td>Active</td>
                         <td>Yes</td>
-                        <td><a href="">MRUMW000001</a></td>
-                        <td>1234567</td>
-                        <td>
-                            <select class="pace-form-control" title="Task Assignee">
-                                <option value="jDoe">John Doe (ATT)</option>
-                                <option value="mSue">Mary Sue (ATT)</option>
-                                <option value="cWalker">Christopher Walker (BV)</option>
-                                <option value="lDavids">Lary Davids (Ericsson)</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr disabled>
+                        <td>POE</td>
+                        <td>LTE</td>
+                        <td>Lorem ipsum dolor sit amet</td>
+                        <td>John Doe</td>
+                        <td>01/16/2017</td>
+                        <td>Mary Sue</td>
                         <td></td>
-                        <td>SS019</td>
-                        <td>Initial OOM Received</td>
-                        <td>Initial OOM Received</td>
-                        <td>Active</td>
-                        <td>Yes</td>
-                        <td><a href="">MRUMW000001</a></td>
-                        <td>1234567</td>
-                        <td>
-                            <select class="pace-form-control" title="Task Assignee" disabled>
-                                <option value="jDoe">John Doe (ATT)</option>
-                                <option value="mSue">Mary Sue (ATT)</option>
-                                <option value="cWalker">Christopher Walker (BV)</option>
-                                <option value="lDavids">Lary Davids (Ericsson)</option>
-                            </select>
-                        </td>
                     </tr>
                     <tr>
+                        <td class="text-center">+</td>
+                        <td class="text-center"><input type="checkbox" /></td>
+                        <td class="text-center"><input type="checkbox" /></td>
+                        <td><a href="">MRTNK000478CR</a></td>
+                        <td>CR Open - Approver 4</td>
+                        <td class="text-center"><button type="button" role="button" class="pace-btn pace-btn-secondary">View/Add</button></tdclass="text-center">
+                        <td>RSCW</td>
+                        <td>RTNK</td>
                         <td></td>
-                        <td>JI022</td>
-                        <td>Preliminary RFDS Issued</td>
-                        <td>Preliminary RFDS Issued</td>
-                        <td>Active</td>
                         <td>Yes</td>
-                        <td><a href="">MRUMW000001</a></td>
-                        <td>1234567</td>
-                        <td>
-                            <select class="pace-form-control" title="Task Assignee">
-                                <option value="jDoe">John Doe (ATT)</option>
-                                <option value="mSue">Mary Sue (ATT)</option>
-                                <option value="cWalker">Christopher Walker (BV)</option>
-                                <option value="lDavids">Lary Davids (Ericsson)</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr class="has-edit">
-                        <td><a href=""<i class="fa fa-pencil" aria-hidden="true" title="Discard Changes"></i></a></td>
-                        <td>SS004</td>
-                        <td>Site Audit Completed</td>
-                        <td>Site Audit Completed</td>
-                        <td>Active</td>
-                        <td>Yes</td>
-                        <td><a href="">MRUMW000001</a></td>
-                        <td>1234567</td>
-                        <td>
-                            <select class="pace-form-control" title="Task Assignee">
-                                <option value="jDoe">John Doe (ATT)</option>
-                                <option value="mSue">Mary Sue (ATT)</option>
-                                <option value="cWalker">Christopher Walker (BV)</option>
-                                <option value="lDavids">Lary Davids (Ericsson)</option>
-                            </select>
-                            <a href=""><i class="fa fa-pencil" aria-hidden="true" title="Discard Changes"></i></a>
-                        </td>
+                        <td>POE</td>
+                        <td>LTE</td>
+                        <td>Lorem ipsum dolor sit amet</td>
+                        <td>John Doe</td>
+                        <td>01/16/2017</td>
+                        <td>Mary Sue</td>
+                        <td></td>
                     </tr>
                     <tr>
+                        <td class="text-center">+</td>
+                        <td class="text-center"><input type="checkbox" /></td>
+                        <td class="text-center"><input type="checkbox" /></td>
+                        <td><a href="">MRTNK000478CR</a></td>
+                        <td>CR Open - Approver 4</td>
+                        <td class="text-center"><button type="button" role="button" class="pace-btn pace-btn-secondary">View/Add</button></tdclass="text-center">
+                        <td>RSCW</td>
+                        <td>RTNK</td>
                         <td></td>
-                        <td>SS048</td>
-                        <td>SA OOM Loaded</td>
-                        <td>SA OOM Loaded</td>
-                        <td>Active</td>
                         <td>Yes</td>
-                        <td><a href="">MRUMW000001</a></td>
-                        <td>1234567</td>
-                        <td>
-                            <select class="pace-form-control" title="Task Assignee">
-                                <option value="jDoe">John Doe (ATT)</option>
-                                <option value="mSue">Mary Sue (ATT)</option>
-                                <option value="cWalker">Christopher Walker (BV)</option>
-                                <option value="lDavids">Lary Davids (Ericsson)</option>
-                            </select>
-                        </td>
+                        <td>POE</td>
+                        <td>LTE</td>
+                        <td>Lorem ipsum dolor sit amet</td>
+                        <td>John Doe</td>
+                        <td>01/16/2017</td>
+                        <td>Mary Sue</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">+</td>
+                        <td class="text-center"><input type="checkbox" /></td>
+                        <td class="text-center"><input type="checkbox" /></td>
+                        <td><a href="">MRTNK000478CR</a></td>
+                        <td>CR Open - Approver 4</td>
+                        <td class="text-center"><button type="button" role="button" class="pace-btn pace-btn-secondary">View/Add</button></tdclass="text-center">
+                        <td>RSCW</td>
+                        <td>RTNK</td>
+                        <td></td>
+                        <td>Yes</td>
+                        <td>POE</td>
+                        <td>LTE</td>
+                        <td>Lorem ipsum dolor sit amet</td>
+                        <td>John Doe</td>
+                        <td>01/16/2017</td>
+                        <td>Mary Sue</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">+</td>
+                        <td class="text-center"><input type="checkbox" /></td>
+                        <td class="text-center"><input type="checkbox" /></td>
+                        <td><a href="">MRTNK000478CR</a></td>
+                        <td>CR Open - Approver 4</td>
+                        <td class="text-center"><button type="button" role="button" class="pace-btn pace-btn-secondary">View/Add</button></tdclass="text-center">
+                        <td>RSCW</td>
+                        <td>RTNK</td>
+                        <td></td>
+                        <td>Yes</td>
+                        <td>POE</td>
+                        <td>LTE</td>
+                        <td>Lorem ipsum dolor sit amet</td>
+                        <td>John Doe</td>
+                        <td>01/16/2017</td>
+                        <td>Mary Sue</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">+</td>
+                        <td class="text-center"><input type="checkbox" /></td>
+                        <td class="text-center"><input type="checkbox" /></td>
+                        <td><a href="">MRTNK000478CR</a></td>
+                        <td>CR Open - Approver 4</td>
+                        <td class="text-center"><button type="button" role="button" class="pace-btn pace-btn-secondary">View/Add</button></tdclass="text-center">
+                        <td>RSCW</td>
+                        <td>RTNK</td>
+                        <td></td>
+                        <td>Yes</td>
+                        <td>POE</td>
+                        <td>LTE</td>
+                        <td>Lorem ipsum dolor sit amet</td>
+                        <td>John Doe</td>
+                        <td>01/16/2017</td>
+                        <td>Mary Sue</td>
+                        <td></td>
                     </tr>
                 </tbody>
             </table><!-- .pace-table -->
