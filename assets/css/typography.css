@@ -12,7 +12,8 @@
 	/* TOC:
 	-	PACE TYPOGRAPHY CSS
             - NOTES
-			- PACE TEXT COLORS
+            - PACE FONTS
+            - PACE TEXT COLORS
             - PACE TEXT SIZES
             - TEXT HELPERS
 	*/
@@ -20,6 +21,24 @@
 	/* NOTES: END
 	***************************************************************************************************************/
 	/*
+	********
+	********
+	********
+	*/
+    /* >> PACE FONTS: START
+	***************************************************************************************************************/
+
+        .pace-aleck {
+            font-family: 'Aleck', 'sans-serif', 'Arial';
+        }
+
+        .pace-source-sans-pro {
+            font-family: 'Source Sans Pro', 'sans-serif', 'Arial';
+        }
+
+    /* PACE FONTS: END
+    ***************************************************************************************************************/
+        	/*
 	********
 	********
 	********
@@ -40,7 +59,7 @@
         }
 
         .pace-text-base {
-            color: #222222;
+            color: #333333;
         }
 
         .pace-text-gray {

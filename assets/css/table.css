@@ -30,6 +30,7 @@
             max-width: 100%;
             overflow-x: auto;
             overflow-y: auto;
+            border: 1px #dddddd solid;
         }    
 
         .pace-table {
@@ -37,6 +38,7 @@
             font-size: 1em;
             background: #ffffff;
             background-color: #ffffff;
+            white-space: nowrap;
         }
 
         .pace-table th,
